@@ -6,6 +6,9 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']" position="before">
+                    <field name="header_text" />
+                </xpath>
                 <field name="payment_term" position="after">
                     <field name="special_condition_id"/>
                 </field>

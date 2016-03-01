@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-    <!--
-        <template id="report_saleorder_custom" inherit_id="sale.report_saleorder_document">
-            <div class="page" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </div>
+        <template id="sale_order_with_header_text" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@id='informations']" position="after">
+                <div t-if="o.header_text" class="col-xs-12">
+                    <span t-field="o.header_text"/>
+                </div>
+            </xpath>
         </template>
-    -->
     </data>
 </openerp>
