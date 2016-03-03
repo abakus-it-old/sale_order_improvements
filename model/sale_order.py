@@ -9,6 +9,7 @@ class sale_order_improvements(models.Model):
     special_condition_id = fields.Many2one(comodel_name='sale.order.special.condition', string="Special condition")
     attachments_ids = fields.Many2many('ir.attachment', string="Attachments")
     header_text = fields.Html(string="Optional header text")
+    note = fields.Html("Terms and conditions")
         
     def action_button_confirm(self, cr, uid, ids, context=None):
         super(sale_order_improvements, self).action_button_confirm(cr, uid, ids, context=context)
