@@ -3,9 +3,8 @@
     <data>
         <template id="sale_order_with_header_text" inherit_id="sale.report_saleorder_document">
             <xpath expr="//div[@id='informations']" position="after">
-                <div t-if="o.header_text" class="col-xs-12">
-                    <span t-field="o.header_text"/>
-                </div>
+                <span t-field="doc.header_text"/>
+                <span t-field="doc.special_condition_id.name"/>
             </xpath>
         </template>
     </data>
