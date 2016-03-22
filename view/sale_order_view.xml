@@ -19,7 +19,7 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
-                <page string="Other Information" position="after">
+                <page position="after">
                     <page string="Attachments">
                         <field name="attachments_ids" widget="many2many_binary" string="Attach a file"/>
                     </page>
