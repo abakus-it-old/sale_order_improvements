@@ -10,7 +10,8 @@ class sale_order_improvements(models.Model):
     attachments_ids = fields.Many2many('ir.attachment', string="Attachments")
     header_text = fields.Html(string="Optional header text")
     note = fields.Html("Terms and conditions")
-        
+
+    # Set the current date as the date of the quotation        
     def action_button_confirm(self, cr, uid, ids, context=None):
         super(sale_order_improvements, self).action_button_confirm(cr, uid, ids, context=context)
         self.pool.get('sale.order').write(cr, uid, ids, {'date_order': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),})
