@@ -13,8 +13,8 @@
         - New field special condition. Will be included at the end of the quotation report.
         - Attachment field in Quotations and Sale Orders
         - It creates a field 'header_html' that will be used with a WYSIWYG and printed on SO reports
-    
-    !!! You need to add "<t t-if="o.special_condition_id"><span t-field="o.special_condition_id.name"/></t>" at the end of the quotation report (sale.report_saleorder_document) !!!
+
+	This module has been developed by Bernard DELHEZ @ AbAKUS it-solution under the control of Valentin THIRION.
     """,
     'data': ['view/report_saleorder.xml',
              'view/sale_order_view.xml',
