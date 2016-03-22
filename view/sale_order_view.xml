@@ -9,7 +9,7 @@
                 <xpath expr="//field[@name='order_line']" position="before">
                     <field name="header_text" />
                 </xpath>
-                <field name="payment_term" position="after">
+                <field name="payment_term_id" position="after">
                     <field name="special_condition_id"/>
                 </field>
             </field>
