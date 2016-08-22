@@ -1,5 +1,4 @@
 from openerp import models, fields
-from datetime import datetime
 
 class sale_order_improvements(models.Model):
     _inherit = 'sale.order'
