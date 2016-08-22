@@ -1,7 +1,7 @@
 {
     'name': "Sale order improvements",
     'version': '9.0.1.1',
-    'depends': ['sale','account_reports_followup'],
+    'depends': ['sale'],
     'author': "Bernard DELHEZ, AbAKUS it-solutions SARL",
     'website': "http://www.abakusitsolutions.eu",
     'category': 'Sale',
